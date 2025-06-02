@@ -1,0 +1,11 @@
+<h2 class="heading">Trash</h2>
+
+<div class="trash-grid">
+  <div class="trash-card" *ngFor="let note of trashNotes; let i = index">
+    <h3>{{ note.title }}</h3>
+    <p>{{ note.description }}</p>
+    <div class="trash-actions">
+      <button (click)="restoreNote(i)"> Recover</button>
+    </div>
+  </div>
+</div>

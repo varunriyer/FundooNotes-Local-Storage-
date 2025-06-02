@@ -1,0 +1,27 @@
+<div class="note-input">
+  <input type="text" placeholder="Title" [(ngModel)]="title" />
+  <textarea placeholder="Take a note..." [(ngModel)]="description"></textarea>
+  <button (click)="addNote()">Add</button>
+</div>
+
+<div class="notes-grid">
+  <div class="note-card" *ngFor="let note of notes; let i = index">
+    <ng-container *ngIf="editIndex !== i; else editForm">
+      <h3>{{ note.title }}</h3>
+      <p>{{ note.description }}</p>
+      <div class="note-actions">
+        <button (click)="setReminder(i)">Set Reminder</button>
+        <button (click)="editNote(i)">Edit</button>
+        <button (click)="deleteNote(i)">Trash</button>
+      </div>
+    </ng-container>
+
+    <ng-template #editForm>
+      <input [(ngModel)]="editedTitle" placeholder="Edit title" />
+      <textarea [(ngModel)]="editedDescription" placeholder="Edit description"></textarea>
+      <div class="note-actions">
+        <button (click)="saveEditedNote()">Save</button>
+      </div>
+    </ng-template>
+  </div>
+</div>

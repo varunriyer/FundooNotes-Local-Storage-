@@ -1,0 +1,40 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #f1f3f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  display: block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover {
+  background-color: #c2e7ff;
+  color: #0b5394;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}

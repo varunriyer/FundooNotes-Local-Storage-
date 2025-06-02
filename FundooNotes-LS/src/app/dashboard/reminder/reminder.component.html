@@ -1,0 +1,11 @@
+<h2 class="heading">Reminders</h2>
+
+<div class="reminder-grid">
+  <div class="reminder-card" *ngFor="let note of reminders">
+    <h3>{{ note.title }}</h3>
+    <p>{{ note.description }}</p>
+    <div class="reminder-time">
+       Reminder set
+    </div>
+  </div>
+</div>

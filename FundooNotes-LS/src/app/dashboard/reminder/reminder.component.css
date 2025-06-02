@@ -1,0 +1,27 @@
+.heading {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.reminder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.reminder-card {
+  background: #e8f0fe;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reminder-card h3 {
+  margin-top: 0;
+}
+
+.reminder-time {
+  margin-top: 10px;
+  color: #0b5394;
+  font-weight: bold;
+}

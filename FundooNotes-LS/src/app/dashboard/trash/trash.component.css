@@ -1,0 +1,35 @@
+.heading {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.trash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.trash-card {
+  background: #fce8e6;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trash-card h3 {
+  margin-top: 0;
+}
+
+.trash-actions {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.trash-actions button {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
